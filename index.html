@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css" />
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="container content clearfix">
+				<div class="navbar-header pull-left">
+					<a class="navbar-brand logo" href="javascript:;">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div id="menu" class="glyphicon glyphicon-th-list hidden-lg hidden-md" style="font-size: 36px;color: #15c288;">
+						<ul class="forword_top">
+							<li>
+								<a href="javascript:;"><span class="glyphicon glyphicon-search" style="font-size: 14px;"></span>搜索</a>
+							</li>
+							<li>
+								<a href="javascript:;">学习中心</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									课程<i class="glyphicon glyphicon-triangle-bottom" style="font-size: 4px;"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">班级 </a>
+							</li>
+							<li>
+								<a href="javascript:;">小组 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<nav class="collapse navbar-collapse pull-left hidden-md hidden-lg">
+					<ul class="nav navbar-nav topmenu hidden-xs hidden-sm">
+						<li class="">
+							<a href="javascript:;">学习中心 </a>
+						</li>
+						<li class="">
+							<a href="javascript:;">课程
+								<i class="glyphicon glyphicon-triangle-bottom" style="font-size: 4px;"></i>
+							</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">班级 </a>
+						</li>
+						<li class="">
+							<a href="javascript:;">小组 </a>
+						</li>
+					</ul>
+				</nav>
+				<div class="pull-right user-nav clearfix">
+					<ul class="nav nav-login">
+						<li class="pull-left">
+							<a class="color-gray-one" href="javascript:;">登录</a>
+						</li>
+						<li class="pull-left">
+							<a href="javascript:;">注册</a>
+						</li>
+						<li class="pull-right hidden-xs hidden-sm hzapp">
+							<a href="javascript:;">
+								<span class="glyphicon glyphicon-phone" style="font-size: 8px;"></span>好知APP
+							</a>
+						</li>
+					</ul>
+					<form class="navbar-form pull-right hidden-xs hz-search">
+						<div class="form-group">
+							<div id="search-left" class="pull-left search-left">
+								<div class="search-type pull-left hidden-xs hidden-sm">
+									<div class="choose">
+										课程<i class="hz-icon glyphicon glyphicon-menu-down" style="font-size: 4px;"></i>
+									</div>
+								</div>
+								<input class="form-control js-search hidden-xs hidden-sm" placeholder="输入要查找的内容">
+								<button class="glyphicon glyphicon-search hidden-xs hidden-sm" style="font-size: 18px;"></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="images/1.jpg" alt="轮播图一" /></div>
+				<div class="swiper-slide"><img src="images/401253543049379291.jpg" alt="轮播图二" /></div>
+				<div class="swiper-slide"><img src="images/606568174438254095.jpg" alt="轮播图三" /></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<!--<div class="wrap">
+			<img src="images/12.jpg">
+		</div>-->
+		<div class="live-open-course index-sec">
+			<div class="container">
+				<h2>
+		        <strong>热门课程</strong>
+		      </h2>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<img src="images/2.jpg">
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<img src="images/3.jpg">
+					</div>
+				</div>
+				<p class="sec-more">
+					<a href="javascript:;">
+						更多
+						<i class=""></i>
+					</a>
+				</p>
+			</div>
+			<div class="container">
+				<h2>
+		        <strong>精品课程</strong>
+		      </h2>
+				<nav id="course-recommed">
+					<ul class="clearfix">
+						<li class="btn btn-success">精品推荐</li>
+						<li class="btn">特价好课</li>
+						<li class="btn">摄影课堂</li>
+						<li class="btn">创意设计</li>
+						<li class="btn">兴趣爱好</li>
+						<li class="btn">声乐器乐</li>
+						<li class="btn">运动健身</li>
+						<li class="btn">IT互联网</li>
+					</ul>
+				</nav>
+				<div class="index-course-list course">
+					<div id="course-commend4" class="row clearfix act">
+						<div class="col-sm-3 col-xs-6">
+							<div class="course-item speical">
+								<div class="course-img">
+									<a href="javascript:;">
+										<img src="images/4.jpg">
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="javascript:;">零基础，30分钟学会制作专业级H5</a>
+									</div>
+									<div class="teacher">
+										<a href="javascript:;"><img src="images/tag1.jpg"></a>
+										<div class="price free pull-right">
+											<span>免费</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6 two">
+							<div class="course-item">
+								<div class="course-img">
+									<a href="javascript:;">
+										<img src="images/5.jpg">
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="javascript:;">零基础，30分钟学会制作专业级H5</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a href="javascript:;"><img src="images/tag2.jpg"></a>
+										<div class="price free pull-right">
+											<span>免费</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="course-item">
+								<div class="course-img">
+									<a href="javascript:;">
+										<img src="images/6.png">
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="javascript:;">零基础，30分钟学会制作专业级H5</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a href="javascript:;"><img src="images/tag3.jpg"></a>
+										<div class="price free pull-right">
+											<span>免费</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<div class="course-item">
+								<div class="course-img">
+									<a href="javascript:;">
+										<img src="images/7.jpg">
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="javascript:;">零基础，30分钟学会制作专业级H5</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a href="javascript:;"><img src="images/tag4.jpg"></a>
+										<div class="price free pull-right">
+											<span>免费</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="course-item">
+								<div class="course-img">
+									<a href="javascript:;">
+										<img src="images/8.jpg">
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="javascript:;">零基础，30分钟学会制作专业级H5</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a href="javascript:;"><img src="images/tag5.jpg"></a>
+										<div class="price free pull-right">
+											<span>免费</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<div class="course-item">
+								<div class="course-img">
+									<a href="javascript:;">
+										<img src="images/9.jpg">
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="javascript:;">零基础，30分钟学会制作专业级H5</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a href="javascript:;"><img src="images/tag6.jpg"></a>
+										<div class="price free pull-right">
+											<span>免费</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="course-item">
+								<div class="course-img">
+									<a href="javascript:;">
+										<img src="images/10.jpg">
+									</a>
+								</div>
+								<div class="course-info">
+									<div class="title">
+										<a href="javascript:;">零基础，30分钟学会制作专业级H5</a>
+									</div>
+									<div class="teacher text-o-show">
+										<a href="javascript:;"><img src="images/tag7.jpg"></a>
+										<div class="price free pull-right">
+											<span>免费</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="sec-more">
+					<a href="javascript:;">
+						更多
+						<i class=""></i>
+					</a>
+				</p>
+			</div>
+			<div class="container">
+				<h2>
+		        <strong>班级推荐</strong>
+		      </h2>
+				<div class="row">
+					<div class="col-md-3 col-xs-6">
+						<div class="pic"><img src="images/11.jpg"></div>
+						<div class="info">
+							<h3>零基础摄影入门班</h3>
+							<p>好知摄影入门班，最有趣的单反摄影入门教程！零基础学习摄影入门技巧，专业摄影师为你...</p>
+							<a class="btn btn-primary" href="javascript:;">立即加入</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="pic"><img src="images/12.jpg"></div>
+						<div class="info">
+							<h3>零基础摄影入门班</h3>
+							<p>好知摄影入门班，最有趣的单反摄影入门教程！零基础学习摄影入门技巧，专业摄影师为你...</p>
+							<a class="btn btn-primary" href="javascript:;">立即加入</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="pic"><img src="images/13.jpg"></div>
+						<div class="info">
+							<h3>零基础摄影入门班</h3>
+							<p>好知摄影入门班，最有趣的单反摄影入门教程！零基础学习摄影入门技巧，专业摄影师为你...</p>
+							<a class="btn btn-primary" href="javascript:;">立即加入</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="pic"><img src="images/14.jpg"></div>
+						<div class="info">
+							<h3>零基础摄影入门班</h3>
+							<p>好知摄影入门班，最有趣的单反摄影入门教程！零基础学习摄影入门技巧，专业摄影师为你...</p>
+							<a class="btn btn-primary" href="javascript:;">立即加入</a>
+						</div>
+					</div>
+				</div>
+				<div class="dynamic">
+					<h4 class="hz-line-left">班级动态</h4>
+					<div id="dynamic-swiper" class="swiper-container"></div>
+				</div>
+				<p class="sec-more">
+					<a href="javascript:;">
+						更多
+						<i class=""></i>
+					</a>
+				</p>
+			</div>
+		</div>
+		<div class="hz-thread index-sec">
+			<div class="container">
+				<h2>
+			        <strong>话题精选</strong>
+			    </h2>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<img src="images/15.jpg">
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<img src="images/16.jpg">
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<img src="images/17.jpg">
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<img src="images/18.jpg">
+					</div>
+				</div>
+				<p class="sec-more">
+					<a href="javascript:;">
+						更多
+						<i class=""></i>
+					</a>
+				</p>
+			</div>
+		</div>
+		<div class="hz-hottag index-sec">
+			<div class="container">
+				<h2>
+			        <strong>热门标签</strong>
+			    </h2>
+				<div class="hottag-list clearfix">
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag1.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag2.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag3.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag4.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag5.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag6.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag7.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag8.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag9.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag10.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag11.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6">
+						<a href="javascript:;">
+							<p>
+								<img src="images/tag12.jpg">
+							</p>
+							<p>
+								Lightroom
+								<br>
+								<span>12门课程</span>
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<h2>
+			        <strong>认证达人</strong>
+			    </h2>
+				<div class="item daren-list active clearfix">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="list-item clearfix">
+							<div class="avatar">
+								<a href="javascript:;"><img src="images/19.png"></a>
+							</div>
+							<div class="main">
+								<p>
+									<a class="active" href="javascript:;">星火英语</a>
+								</p>
+								<!--<p>
+									<span>英语培训</span>
+								</p>-->
+								<p>知名英语教育机构...</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="list-item clearfix">
+							<div class="avatar">
+								<a href="javascript:;"><img src="images/20.png"></a>
+							</div>
+							<div class="main">
+								<p>
+									<a class="active" href="javascript:;">星火英语</a>
+								</p>
+								<!--<p>
+									<span>英语培训</span>
+								</p>-->
+								<p>知名英语教育机构...</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="list-item clearfix">
+							<div class="avatar">
+								<a href="javascript:;"><img src="images/21.jpg"></a>
+							</div>
+							<div class="main">
+								<p>
+									<a class="active" href="javascript:;">星火英语</a>
+								</p>
+								<!--<p>
+									<span>英语培训</span>
+								</p>-->
+								<p>知名英语教育机构...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="hz-index-bottom">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-xs-4 col-md-4">
+						<a href="javascript:;">
+							<div class="pic">
+								<img src="images/bottom-item1.png">
+							</div>
+							<p>发现数千门课程</p>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<a href="javascript:;">
+							<div class="pic">
+								<img src="images/bottom-item2.png">
+							</div>
+							<p>发现数千门课程</p>
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<a href="javascript:;">
+							<div class="pic">
+								<img src="images/bottom-item3.png">
+							</div>
+							<p>发现数千门课程</p>
+						</a>
+					</div>
+				</div>
+				<div class="more">
+					<a href="javascript:;">
+						更有趣有效的学习
+						<i></i>
+					</a>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 footer-logo">
+						<a href="javascript:;">
+							<img src="images/foot-logo.png">
+						</a>
+					</div>
+					<div class="col-md-4 about">
+						<span>
+				            <a href="javascript:;">关于我们</a>
+				        </span> |
+						<span>
+				          <a href="javascript:;">加入我们</a>
+				        </span> |
+						<span>
+				          <a href="javascript:;">合作申请</a>
+				        </span> |
+						<span>
+				          <a href="javascript:;">意见反馈</a>
+				        </span> |
+						<span>
+				          <a href="javascript:;">用户协议</a>
+				        </span>
+						<br>
+						<a class="con" href="javascript:;">浙ICP备13006852号-3</a>
+						<a class="con" href="javascript:;">浙B2-20160872</a>
+					</div>
+					<div class="col-md-3 col-md-offset-1 col-xs-12 about-right">
+						<div>
+							<span>关注我们：</span>
+							<a href="javascript:;"><i class="icon-weibo"></i></a>
+							<a href="javascript:;"><i></i></a>
+							<a href="javascript:;"><i></i></a>
+							<a href="javascript:;"><i></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="friendlinks">
+			<div class="container">
+				<div class="content">
+					<font class="font">友情链接:</font>
+					<a class="white" href="javascript:;">EduSoho开源网络课堂</a>
+					<span>|</span>
+					<a class="white" href="javascript:;">气球鱼学院</a>
+					<span>|</span>
+					<a class="white" href="javascript:;">360安全网址导航</a>
+					<span>|</span>
+					<a class="white" href="javascript:;">hao123</a>
+					<span>|</span>
+					<a class="white" href="javascript:;">绿色网</a>
+					<span>|</span>
+					<a class="white" href="javascript:;">站长之家</a>
+					<span>|</span>
+					<a class="white" href="javascript:;">新客网</a>
+					<span>|</span>
+					<a class="white" href="javascript:;">暖石网</a>
+					<span>|</span>
+					<a class="white" href="javascript:;">麦子学院</a>
+					<span>|</span>
+					<a class="white" href="javascript:;">博为峰网校</a>
+					<br>
+				</div>
+				Powered by
+				<a href="javascript:;">EduSoho v7.5.15</a>
+				©2014-2017
+				<a class="mlm" href="javascript:;">好知网</a>
+			</div>
+		</div>
+
+		<script src="js/swiper-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+
+</html>
